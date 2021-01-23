@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 cdesigner.eu
+ * Copyright (C) 2021 cdesigner.eu for EDU
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,17 +18,8 @@ package electricstove_edu_1;
 
 /**
  *
- * @author cdesigner.eu
+ * @author Phenom
  */
-public class ElectricStove_EDU_1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // This is testing code for our educational application
-        HeaterPlate testPlate = new HeaterPlate(1200, 1800, 23.5f,"mora" );
-        System.out.println("Power of the selected plate is: " + testPlate.getElectric_power() + "W");
-    }
-    
+public enum StoveType{
+    induction_cooktop, electric_cooktop, coil_electric_cooktop
 }
