@@ -49,6 +49,28 @@ public class Shop {
       }
       return null;
   }
-  // page 24
+  
+  public ElectricStove search(ElectricStove searchStove) {
+      for (Iterator i = stoves.iterator(); i.hasNext(); ) {
+          ElectricStove stove = (ElectricStove)i.next();
+          // serial number is not used for search because is very unique for finding wider match
+          // same the price
+          StoveType stove_type = searchStove.getStove_type();
+          if ((stove_type != null) && (!stove_type.equals("")) && (!stove_type.equals(stove.getStove_type()))) {
+                    continue;
+          }
+          
+          HeaterPlate heater_plate = searchStove.getHeater_plate_1();  // for further rework, how to find match if one of the heater plates is as in search specified
+          if ((heater_plate != null) && (!heater_plate.equals("")) && (!heater_plate.equals(stove.getHeater_plate_1()))) {
+                    continue;
+          }
+          
+          
+      }
+      
+      return null;
+  }
+          
+  
   
 }

@@ -27,8 +27,32 @@ public class ElectricStove_EDU_1 {
      */
     public static void main(String[] args) {
         // This is testing code for our educational application
-        HeaterPlate testPlate = new HeaterPlate(1200, 1800, 23.5f,"mora" );
-        System.out.println("Power of the selected plate is: " + testPlate.getElectric_power() + "W");
+        
+        //setup inventory
+        Shop our_stove_shop = new Shop();
+        initializeShop(our_stove_shop);
+        
+        //what our fictive user is looking for - this will be obtained from a dialog in real application - look at page 25
+        
+        
+        
+        
+    }
+    
+    private static void initializeShop(Shop shop) { //method for initializing stoveShop properties
+        
+        
+        // initialize plate as the first
+        HeaterPlate mora_1200_a1 = new HeaterPlate(1200, 180, 17.25f, "MO123"); // 1200W example heater plate
+        HeaterPlate mora_1500_a1 = new HeaterPlate(1500, 180, 17.25f, "MO123"); // 1500W example heater plate
+         
+         
+        Heater mora_850_up_a1 = new Heater(850, HeaterType.ETA123, 17.50f, "ETA123212112");
+        Heater mora_850_bottom_a1 = new Heater(1250, HeaterType.ETA245, 17.50f, "ETA123212112");
+        
+        //construct and add products into a inventory - in real app we add them into a database or file, and create aplication dialog for adding new items
+        shop.addStove(mora_1200_a1, mora_1200_a1, mora_1200_a1, mora_1500_a1, mora_850_up_a1, mora_850_bottom_a1, StoveType.electric_cooktop, 225f, "SN10007E25", "Mora E550");
+        
     }
     
 }

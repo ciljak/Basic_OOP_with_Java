@@ -19,9 +19,9 @@ package electricstove_edu_1;
 /**
  *
  * @author Phenom
- * This class initialize data for further work. real aplication read data from file or connect to a database.
+ * This class initialize data for further work. real application read data from file or connect to a database.
  */
-public class Initialize {
+public class Initialize { // not used because initialisation method has been added into a file containing main method - please take a lok in ElectricStove_EDU_1.java
 
     public Initialize() {
   
