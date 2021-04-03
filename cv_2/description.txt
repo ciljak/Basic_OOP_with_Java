@@ -1,0 +1,1 @@
+Supportcv_2 Introduce new interface for SupportFunctions representing contract for implementation Save/ reload functionality.

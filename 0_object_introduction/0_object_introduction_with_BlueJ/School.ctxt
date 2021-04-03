@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=School
+comment0.text=\r\n\ Example\ of\ modeling\ real\ object\ of\ school.\r\n\r\n\ @author\ (Ciljak)\r\n\ @version\ (3.4.2021)\r\n
+comment1.params=name\ type
+comment1.target=School(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ School\ -\ there\ are\ two\ overloading\ constructors\r\n
+comment2.params=name\ type\ nrOfClasses
+comment2.target=School(java.lang.String,\ java.lang.String,\ int)
+comment3.params=name
+comment3.target=void\ setName(java.lang.String)
+comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment4.params=type
+comment4.target=void\ setType(java.lang.String)
+comment5.params=nrOfClasses
+comment5.target=void\ setNrOfClasses(int)
+comment6.params=
+comment6.target=java.lang.String\ getName()
+comment7.params=
+comment7.target=java.lang.String\ getType()
+comment8.params=
+comment8.target=int\ getNrOfClasses()
+numComments=9
