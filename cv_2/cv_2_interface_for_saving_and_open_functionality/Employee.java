@@ -5,7 +5,9 @@
  * @author (Ciljak)
  * @version (v 1.0 3.4.2021)
  */
-public class Employee
+import java.io.Serializable; // important API package for Serialization
+
+public class Employee implements Serializable
 {
     private String id;
     private String firstname;

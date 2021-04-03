@@ -19,6 +19,7 @@ public class Object_introduction
      */
     public static void main(String[] args) { // entry class in java
         // TODO code application logic here
+        final String SAVE_LOCATION = "our_school.txt";
         
         School our_school = new School("Example vocational school","Vocational school", 16 ); // we instantionate and construct our object along class teplate School
         
@@ -41,7 +42,30 @@ public class Object_introduction
         // show all our school classes
         our_school.showAllSchoolClasses(); // we inwoking method implemented in School_class responsible for showing info about currently added classes into our school
         
+         // saving our school with serializable feature
+        ImplementationSupportFunction supportFunction = new ImplementationSupportFunction(); // instantionate object providing SupportFunction
         
+        
+        if (supportFunction.saveObject(SAVE_LOCATION, our_school)) { //
+            System.out.println("School object succcesfully saved to loaction:" + SAVE_LOCATION);
+        } else {
+            System.out.println("There were errors during saving process!");
+        } 
+        
+      
+        
+        School restored_school ;
+        
+        restored_school = (School)supportFunction.readObject(SAVE_LOCATION);
+        System.out.println("Our restored school from file contains these data:");
+        
+        try {
+           restored_school.showAllSchoolClasses(); // show content of restored school
+        }
+	catch(NullPointerException e) {
+	   System.out.println("NullPointerException thrown!");
+	}
+	
         
     }
 }

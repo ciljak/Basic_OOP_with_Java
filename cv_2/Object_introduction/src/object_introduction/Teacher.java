@@ -5,11 +5,13 @@
  */
 package object_introduction;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Phenom
  */
-public class Teacher extends Employee {
+public class Teacher extends Employee implements  Serializable {
     
     private String approbation; //atributes specifich for child class
 

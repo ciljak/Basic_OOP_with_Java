@@ -5,7 +5,9 @@
  * @author (Ciljak)
  * @version (1.0 3.4.2021)
  */
-public class School_class
+import java.io.Serializable; // important API package for Serialization
+
+public class School_class implements  Serializable //implements serializable interface for further objects serlialisation
 {
     public String name;
     public String short_name;

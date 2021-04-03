@@ -6,12 +6,13 @@
 package object_introduction;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
 /**
  * 
  * @author Phenom
  */
-public class School {
+public class School implements  Serializable {
     // atributes of our example class
     private String name;
     private String type;
@@ -85,6 +86,8 @@ public class School {
         }
         
     }
+    
+    
     
     
     

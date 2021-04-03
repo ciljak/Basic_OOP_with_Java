@@ -11,5 +11,6 @@ package object_introduction;
  */
 public interface SupportFunctions {
     public boolean saveObject (String where_file_save, Object object_to_save); 
+    public Object readObject (String where_file_saved);
     
 }

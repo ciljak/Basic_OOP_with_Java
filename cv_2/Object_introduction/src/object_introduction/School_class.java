@@ -5,11 +5,13 @@
  */
 package object_introduction;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Phenom
  */
-public class School_class {
+public class School_class implements  Serializable {
     public String name;
     public String short_name;
     public int number_of_students;

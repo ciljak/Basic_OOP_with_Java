@@ -5,7 +5,9 @@
  * @author (Ciljak)
  * @version (v 1.0 3.4.2021)
  */
-public class Teacher extends Employee
+import java.io.Serializable; // important API package for Serialization
+
+public class Teacher extends Employee implements Serializable
 {
     // instance variables - replace the example below with your own
     private int x;

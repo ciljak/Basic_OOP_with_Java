@@ -7,8 +7,8 @@
  */
 
 import java.util.ArrayList; // example of importing Java API package for support of work with ArrayList data structure
-
-public class School
+import java.io.Serializable; // important API package for Serialization
+public class School implements Serializable
 {
    // atributes of our example class
     private String name;
