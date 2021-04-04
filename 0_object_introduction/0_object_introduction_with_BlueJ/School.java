@@ -15,6 +15,11 @@ public class School
     /**
      * Constructor for objects of class School - there are two overloading constructors
      */
+    
+    public void School() { // default void constructor
+        
+    }
+    
      public School(String name, String type) {
         this.name = name;
         this.type = type;

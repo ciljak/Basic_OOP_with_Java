@@ -62,10 +62,10 @@ public class Object_introduction
         try {
            restored_school.showAllSchoolClasses(); // show content of restored school
         }
-	catch(NullPointerException e) {
-	   System.out.println("NullPointerException thrown!");
-	}
-	
+    catch(NullPointerException e) {
+       System.out.println("NullPointerException thrown!");
+    }
+    
         
     }
 }

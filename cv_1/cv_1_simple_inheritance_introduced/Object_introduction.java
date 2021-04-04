@@ -37,6 +37,7 @@ public class Object_introduction
         our_school.addClassIntoSchool(I_A);
         our_school.addClassIntoSchool(I_B);
         
+        
        
         // show all our school classes
         our_school.showAllSchoolClasses(); // we inwoking method implemented in School_class responsible for showing info about currently added classes into our school

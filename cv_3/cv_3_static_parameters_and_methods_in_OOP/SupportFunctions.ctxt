@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=SupportFunctions
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ SupportFunctions\ here.\r\n\ Interface\ make\ contract\ for\ further\ implementation\ of\ function\ for\ saving\ and\ reading\ serialized\ objects.\r\n\ @author\ (Ciljak)\r\n\ @version\ (v\ 1.0\ 3.4.2021)\r\n
+comment1.params=where_file_save\ object_to_save
+comment1.target=boolean\ saveObject(java.lang.String,\ java.lang.Object)
+comment2.params=where_file_saved
+comment2.target=java.lang.Object\ readObject(java.lang.String)
+numComments=3

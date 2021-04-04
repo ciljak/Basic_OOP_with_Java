@@ -1,0 +1,2 @@
+Support cv_3 Static functions, constants and staic methods in program - way how to create global variables in object world (as we
+can say).

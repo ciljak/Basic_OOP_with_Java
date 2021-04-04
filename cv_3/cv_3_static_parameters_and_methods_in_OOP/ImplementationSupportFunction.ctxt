@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ImplementationSupportFunction
+comment1.params=where_file_save\ object_to_save
+comment1.target=boolean\ saveObject(java.lang.String,\ java.lang.Object)
+comment2.params=where_file_saved
+comment2.target=java.lang.Object\ readObject(java.lang.String)
+numComments=3

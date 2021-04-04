@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Teacher
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Teacher\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Teacher\ class\ is\ a\ Employee\ child\ subclass\ -\ he\ extendeds\ Employeeclass\ and\ add\ new\ features.\r\n\r\n\ @author\ (Ciljak)\r\n\ @version\ (v\ 1.0\ 3.4.2021)\r\n
 comment1.params=aprobation\ id\ firstname\ lastname\ employedSince\ employedTo\ salaryPerMonth\ workExperienceYears
 comment1.target=Teacher(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ float,\ int)
 numComments=2
