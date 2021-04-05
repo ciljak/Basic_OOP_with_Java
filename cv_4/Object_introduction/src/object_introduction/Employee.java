@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author Phenom
  */
-public class Employee implements  Serializable { // new parent class for all school employees
+public abstract class Employee implements  Serializable { // new parent class for all school employees
     private String id;
     private String firstname;
     private String lastname;

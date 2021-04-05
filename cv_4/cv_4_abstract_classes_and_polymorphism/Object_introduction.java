@@ -72,6 +72,14 @@ public class Object_introduction
         // Testing asignment of final static constant assignment in our school class
         System.out.println("Main educational language in our example school is: " + restored_school.getLearningLanguage());
     
+        // basic info about teacher
+        our_example_teacher.basicTeacherInfo();
+        
+         // create new teacher of vocational topics and show them basci info
+        TeacherOfVocationalClasses our_example_vocational_teacher;
+        our_example_vocational_teacher = new TeacherOfVocationalClasses("ENG CONSTRUCTION", "SKU02", "John", "DOE 2", "1.9.2020", "31.8.2021",1045.0f , 9, "Eletrical design");
+           // show info about them
+           our_example_vocational_teacher.basicTeacherInfo();
         
     }
 }

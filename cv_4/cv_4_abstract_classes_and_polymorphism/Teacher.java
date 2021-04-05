@@ -9,8 +9,7 @@ import java.io.Serializable; // important API package for Serialization
 
 public class Teacher extends Employee implements Serializable
 {
-    // instance variables - replace the example below with your own
-    private int x;
+   
 
     /**
      * Constructor for objects of class Teacher
@@ -21,5 +20,16 @@ public class Teacher extends Employee implements Serializable
         super(id, firstname, lastname, employedSince, employedTo, salaryPerMonth, workExperienceYears); // super keyword invoke parent constructor
         this.approbation = aprobation; //this keyword means actual lever parameter approbation
     }
+    
+    public final boolean basicTeacherInfo () { // final method can not be overrided at child class TeacherOfVocationalClasses
+        System.out.println("------- Basic teacher INFO ------------------------");
+        System.out.println("* " +super.getFirstname() + " " + super.getLastname());
+        System.out.println("---------------------------------------------------");
+        System.out.println("* With approbation: " + this.approbation );
+        System.out.println("* Has working experience: " + super.getWorkExperienceYears());
+        System.out.println("---------------------------------------------------");
+        return true;
+    }
+
     
 }

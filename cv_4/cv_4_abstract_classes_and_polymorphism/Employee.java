@@ -7,7 +7,7 @@
  */
 import java.io.Serializable; // important API package for Serialization
 
-public class Employee implements Serializable
+public abstract class Employee implements Serializable
 {
     private String id;
     private String firstname;
