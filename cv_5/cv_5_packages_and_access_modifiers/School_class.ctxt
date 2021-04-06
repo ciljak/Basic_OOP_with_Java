@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=School_class
+comment1.params=name\ short_name\ number_of_students\ classTeacher
+comment1.target=School_class(java.lang.String,\ java.lang.String,\ int,\ Teacher)
+comment10.params=
+comment10.target=Teacher\ getClassTeacher()
+comment11.params=classTeacher
+comment11.target=void\ setClassTeacher(Teacher)
+comment2.params=
+comment2.target=School_class()
+comment3.params=
+comment3.target=int\ getNumberOfInstantionated_classes()
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment5.params=name
+comment5.target=void\ setName(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getShort_name()
+comment7.params=short_name
+comment7.target=void\ setShort_name(java.lang.String)
+comment8.params=
+comment8.target=int\ getNumber_of_students()
+comment9.params=number_of_students
+comment9.target=void\ setNumber_of_students(int)
+numComments=12

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TeacherOfVocationalClasses
+comment0.text=\r\n\ Subclass\ of\ Teacher\ class\ -\ for\ demonstration\ unability\ to\ override\ final\ method.\r\n\r\n\ @author\ (Ciljak)\r\n\ @version\ (v\ 1.0\ 5.4.2021)\r\n
+comment1.params=aprobation\ id\ firstname\ lastname\ employedSince\ employedTo\ salaryPerMonth\ workExperienceYears\ completedCourses
+comment1.target=TeacherOfVocationalClasses(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ float,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getCompletedCourses()
+comment3.params=completedCourses
+comment3.target=void\ setCompletedCourses(java.lang.String)
+numComments=4

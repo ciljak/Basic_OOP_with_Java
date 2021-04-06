@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.target=ProgramConstants
+comment0.text=\r\n\ Class\ responsible\ for\ holding\ all\ available\ program\ constants\ -\ only\ for\ demonstration\ purposes.\r\n\ In\ real\ application,\ presets\ are\ in\ config\ file\ that\ is\ read\ at\ startup.\r\n\ Abstract\ class\ can\ not\ be\ instantionated\!\r\n\ @author\ (Ciljak)\r\n\ @version\ (v\ 1.0\ 4.4.2021)\r\n
+numComments=1

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Teacher
+comment1.params=aprobation\ id\ firstname\ lastname\ employedSince\ employedTo\ salaryPerMonth\ workExperienceYears
+comment1.target=Teacher(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ float,\ int)
+comment2.params=
+comment2.target=boolean\ basicTeacherInfo()
+numComments=3

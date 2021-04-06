@@ -86,6 +86,8 @@ public class Object_introduction  {
         our_example_vocational_teacher = new TeacherOfVocationalClasses("ENG CONSTRUCTION", "SKU02", "John", "DOE 2", "1.9.2020", "31.8.2021",1045.0f , 9, "Eletrical design");
            // show info about them
            our_example_vocational_teacher.basicTeacherInfo();
+           
+           
         
         
         
