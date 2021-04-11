@@ -1,0 +1,3 @@
+In our program we curently instantionated 4 School_class objects. 
+Sqr of number instantionated clases is:  16.0
+Main educational language in our example school is: Slovak
