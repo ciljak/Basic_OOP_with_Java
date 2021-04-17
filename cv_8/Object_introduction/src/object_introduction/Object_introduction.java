@@ -119,6 +119,14 @@ public class Object_introduction  {
         what_we_red_from_saved_file = supportFunction.readTextFromFile (FILE_NAME, DIRECTORY_LOCATION);
         System.out.println(what_we_red_from_saved_file);
         
+        // 17.4.21 - now we open UI
+        /* Create and display the form -  all cecessary code handling form events is located on form file named Our_UI.java*/
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Our_UI().setVisible(true);
+            }
+        });
+        
         
     }
     
