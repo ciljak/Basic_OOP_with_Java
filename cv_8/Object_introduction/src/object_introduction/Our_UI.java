@@ -5,6 +5,10 @@
  */
 package object_introduction;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import javax.swing.JOptionPane;
 import mojeFunkcie.ImplementationSupportFunction;
 
@@ -35,6 +39,10 @@ public class Our_UI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPopupMenu2 = new javax.swing.JPopupMenu();
+        Save_popup_menu = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        Exit_from_popup_menu = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -60,6 +68,23 @@ public class Our_UI extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
 
+        Save_popup_menu.setText("Save");
+        Save_popup_menu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save_popup_menuActionPerformed(evt);
+            }
+        });
+        jPopupMenu2.add(Save_popup_menu);
+        jPopupMenu2.add(jSeparator2);
+
+        Exit_from_popup_menu.setText("Exit program");
+        Exit_from_popup_menu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Exit_from_popup_menuActionPerformed(evt);
+            }
+        });
+        jPopupMenu2.add(Exit_from_popup_menu);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("OOP programming demo v. 1.0, 2021");
         setResizable(false);
@@ -68,6 +93,8 @@ public class Our_UI extends javax.swing.JFrame {
                 formWindowOpened(evt);
             }
         });
+
+        jPanel1.setComponentPopupMenu(jPopupMenu2);
 
         jLabel1.setText("School name:");
         jLabel1.setToolTipText("");
@@ -117,6 +144,13 @@ public class Our_UI extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(0, 153, 204));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/object_introduction/images/Presentation.png"))); // NOI18N
         jLabel9.setText("OOP programming tutorial");
+        jLabel9.setToolTipText("Lnik for visiting project homepage cdesigner.eu.");
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -196,6 +230,8 @@ public class Our_UI extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel9.getAccessibleContext().setAccessibleDescription("Go to project homepage cdesigner.eu.");
 
         jMenu1.setText("File");
 
@@ -313,6 +349,8 @@ public class Our_UI extends javax.swing.JFrame {
         jLabel6.setText("");  // second line of message
         jLabel7.setText("");  // third line of message
         jLabel8.setText("");  // main message text
+        // hint for label9
+        jLabel9.setToolTipText("Link to a project page cdesigner.eu.");
     }//GEN-LAST:event_formWindowOpened
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -448,6 +486,47 @@ public class Our_UI extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null,"OOP programming demo v 1.0. \n (c) cdesigner.eu, 2021");
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // TODO add your handling code here: Loading page after click on presentation icon on Label9
+        try {
+         
+        Desktop.getDesktop().browse(new URI("http://www.cdesigner.eu"));
+         
+        } catch (IOException | URISyntaxException e1) {
+            e1.printStackTrace();
+        }
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void Save_popup_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save_popup_menuActionPerformed
+        // TODO add your handling code here: save from popup menu
+        if (gui_created_school != null) { // object was created and is not empty
+             if (supportFunctionOnGUI.saveObject(GUI_SAVE_FILE_NAME, gui_created_school)) { //
+                 System.out.println("School object succcesfully saved to file named: " + GUI_SAVE_FILE_NAME);
+                 jLabel8.setText("School object succcesfully saved to file named: " + GUI_SAVE_FILE_NAME);  // main message text
+             } else {
+                 System.out.println("There were errors during saving process!");
+             } 
+        
+      
+            
+            
+            
+        } else { // object does not exist
+            jLabel5.setText("");  // first line of mesage
+            jLabel6.setText("");  // second line of message
+            jLabel7.setText("");  // third line of message
+            jLabel8.setText("Object can not be saved beacause is empty, please create them first!");  // main message text
+        }
+        
+    }//GEN-LAST:event_Save_popup_menuActionPerformed
+
+    private void Exit_from_popup_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exit_from_popup_menuActionPerformed
+        // TODO add your handling code here: exit after selectin exit from popup menu
+        System.exit(0); // terminate actual running virtual maschine
+        // more about ending windows or programs can be obtained from here
+        // https://stackoverflow.com/questions/8632705/how-to-close-a-gui-when-i-push-a-jbutton , 17.4.2021 implemented during tutorial shoot at 18.4.2021
+    }//GEN-LAST:event_Exit_from_popup_menuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -484,6 +563,8 @@ public class Our_UI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Exit_from_popup_menu;
+    private javax.swing.JMenuItem Save_popup_menu;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -504,7 +585,9 @@ public class Our_UI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
